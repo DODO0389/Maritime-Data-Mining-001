@@ -1,0 +1,20 @@
+데이터마이닝 3주차 과제 
+
+menu = {
+    "Americano": 3000,
+    "Ice Americano": 3500,
+    "Cappuccino": 4000,
+    "Cafe Latte": 4500,
+    "Espresso": 3600
+}
+
+menu = dict(menu_tuples)
+
+menu_list = list(menu.keys())
+
+choice = input("위의 메뉴중 하나를 선택하세요: ")
+
+if choice in menu_list:  
+    print(f"{choice}는 {menu[choice]}원 입니다. 결제를 부탁합니다.")
+else:
+    print(f"미안합니다. {choice}은 메뉴에 없습니다.")
